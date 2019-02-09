@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1549728922741
+Build-Jdk: 1.8.0_171
+Built-By: v_cz01
+Bundle-Blueprint: OSGI-INF/blueprint/activiti-camel.xml
+Bundle-Description: Bill-of-materials of the core components and version
+ s used for building the features project(This POM contains the dependen
+ cies and versions that are useful to both users and our owndevelopment)
+Bundle-DocURL: https://www.apache.org/
+Bundle-License: https://www.apache.org/licenses/LICENSE-2.0.txt
+Bundle-ManifestVersion: 2
+Bundle-Name: Apache ServiceMix :: Workflow 1.00.21
+Bundle-SymbolicName: activi-bpmn-2018
+Bundle-Vendor: The Apache Software Foundation
+Bundle-Version: 1.0.21
+Created-By: Apache Maven Bundle Plugin
+Export-Package: bpmnworkflow;uses:="org.activiti.bpmn.model,org.activiti
+ .engine.delegate,org.apache.camel.builder";version="1.0.21"
+Export-Service: org.activiti.camel.ContextProvider
+Import-Package: org.activiti.bpmn.model;version="[5.19,6)",org.activiti.
+ camel,org.activiti.engine;version="[5.19,6)",org.activiti.engine.delega
+ te;version="[5.19,6)",org.activiti.engine.repository;version="[5.19,6)"
+ ,org.activiti.engine.runtime;version="[5.19,6)",org.apache.camel;versio
+ n="[2.16,3)",org.apache.camel.builder;version="[2.16,3)",org.apache.cam
+ el.model;version="[2.16,3)",org.osgi.service.blueprint;version="[1.0.0,
+ 2.0.0)",org.slf4j;version="[1.7,2)"
+Import-Service: org.activiti.engine.RuntimeService;multiple:=false
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.8))"
+Tool: Bnd-3.3.0.201609221906
